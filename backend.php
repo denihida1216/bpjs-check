@@ -93,7 +93,7 @@ class Backend
     // Dashboard Koneksi Server BPJS Vclaim
     public function rencana_kontrol()
     {
-        $noSuratKontrol = "0301R0010120K000003";
+        $noSuratKontrol = ""; //silahkan isi no surat kontrol peserta untuk test
         $data = "";
         $url = "https://apijkn.bpjs-kesehatan.go.id/vclaim-rest/RencanaKontrol/noSuratKontrol/{$noSuratKontrol}";
         $result = $this->BpjsSend("GET", $url, $data);
